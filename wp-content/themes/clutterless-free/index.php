@@ -57,7 +57,7 @@
 			   <div class="post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				   <div class="post-image">
 					  
-					 <a href="<?php the_permalink(); ?>">    <span class="pibfi_pinterest"> <?php	
+					 <a href="<?php the_permalink(); ?>">    <span class="pibfi_pinterest" style="width:100%"> <?php	
 						  if(has_post_thumbnail()) {			the_post_thumbnail('full', array('class' => 'pinthis')); 
  $pinterestimage = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' ); ?><span class="pinstabtns"><span class="xc_pin" onclick="pin_this(event, 'http://pinterest.com/pin/create/button/?url=<? the_permalink(); ?>&media=<?php echo $pinterestimage[0]; ?>&description=<?php the_title();?>')">
 					     </span></span>
