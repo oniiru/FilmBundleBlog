@@ -26,12 +26,7 @@
           
 				                </div><!-- #search -->
         
-				                <div class="clear"></div>
-								
-                        <div class="logo-name"><h2><a href="<?php print get_home_url(); ?>">Home</a></h2></div><!-- .logo-name -->
-                        <div class="tagline"><?php bloginfo('description'); ?></div><!-- .tagline -->
-                        <div class="clear"></div>
-
+				          
                       </div><!-- #logo -->
         
                 </div><!-- #sidebar-logo -->
