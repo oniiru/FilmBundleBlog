@@ -1,0 +1,75 @@
+/*
+Plugin Name: Pinterest Pin It Button For Images
+Plugin URI: http://www.canha.net
+Description: Displays a Pin It button directly over your images
+Author: Canha
+Author URI: http://www.canha.net
+Version: 1.0.1
+*/
+/*	-----------
+		BASE STYLES
+		-----------
+*/
+
+/* If you feel comfortable editing here, go ahead. I promise to add a function soon to easily change the button */
+
+.pibfi_pinterest {
+	position: relative;
+	display: inline-block;
+}
+
+span.pinstabtns {
+	position: absolute !important;
+	top:5px;
+	right:5px;
+	bottom:auto !important;
+	height:32px;
+}
+.pibfi_pinterest .xc_pin {
+	width: 56px; height: 32px; /* Please note that the button is 80px x 50px. If you use a different size button, change this */
+	background-image: url('ppibfi_button.png'); background-repeat: no-repeat; /* This is the buttons image. Image can be found in the plugin folder */
+	opacity: 0;
+	cursor: pointer;
+	display:inline-block !important;
+	vertical-align:top;
+	bottom:auto !important;
+}
+
+.pibfi_pinterest .xc_insta {
+	width: 183px !important; height: 32px !important; /* Please note that the button is 80px x 50px. If you use a different size button, change this */
+	background-image: url('insta_button.png') !important; 
+	background-repeat: no-repeat; /* This is the buttons image. Image can be found in the plugin folder */
+	opacity: 0;
+	cursor: pointer;
+	font-size:0px !important;
+}
+.pibfi_pinterest img.left + .xc_pin {
+	margin-left: 0;
+}
+.pibfi_pinterest img.left + .xc_insta {
+	margin-left: 0;
+}
+
+/*	-----------------
+		INTERACTIONS / FX
+		-----------------
+*/
+
+.pibfi_pinterest .xc_pin, .pibfi_pinterest .xc_insta,
+.pibfi_pinterest img {
+	-webkit-transition:opacity .2s ease-out; -moz-transition:opacity .2s ease-out; transition:opacity .2s ease-out;
+}
+
+
+.pibfi_pinterest img:hover + .pinstabtns .xc_pin, .pinstabtns:hover .xc_pin
+{
+	opacity: .85;
+}
+.pibfi_pinterest_hover {
+	opacity: .6 !important;
+	
+}
+
+.pibfi_pinterest .xc_pin:hover, .pibfi_pinterest .xc_insta:hover {
+	opacity: 1 !important;
+}
