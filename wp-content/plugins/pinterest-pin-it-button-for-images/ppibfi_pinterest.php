@@ -130,7 +130,12 @@ function pibfi_Engine_add_pin( $content, $pinterest_base_url, $post_url, $post_t
 				'&media=%2$s.%3$s'.'&description='.$post_title.'\')">
 				</span>
 				</span>
-			</span>';
+				<div class="instagramlink">
+				<div class="instagramtext">filmbundle</div>
+				<div class="instagramlogo"></div>
+				</div>
+			</span>
+			';
 	// Regular expression that finds all post's images
 	$pattern = '/<img(.*?)src=[\'"](.*?).(bmp|gif|jpeg|jpg|png)[\'"](.*?)>/i';
 	// Array to store the images that matches 
