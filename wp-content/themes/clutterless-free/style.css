@@ -16,7 +16,7 @@ Tags: one-column, fixed-width, left-sidebar, custom-colors, theme-options, custo
 /* ------------------------------------------------ */
 
 /* Yahoo Style Reset Code licensed under the BSD License: http://developer.yahoo.com/yui/license.html version: 2.8.1 */
-html{color:#000;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
+html{color:#000;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style-type:disc;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
 
 /* ------------------------------------------------ */
 /* General Styles */
@@ -37,10 +37,15 @@ p {margin-bottom: 20px; }
 b, strong {font-weight: bold;}
 .clear {clear:both;}
 h4, h5, h6 {margin: 0 0 10px 0;}
-ol, ul {margin: 0 0 0px 0px;font-family: "open sans";
+ol, ul {margin: 2em 0 1em 0px;;font-family: "open sans";
 font-size: 14px;
 font-weight: 600;}
-ol li {list-style-type: decimal; padding: 0 0 10px 0;}
+ol, li {
+padding: 0 0 1em 0px;
+margin-left: 40px;
+line-height: 1.2em;
+margin-right: 40px;
+}
 i, em {font-style: italic}
 hr {border: none; border-bottom: 1px dotted; margin: 20px 0; }
 del {text-decoration: line-through;}
@@ -53,6 +58,11 @@ li a:hover {color:rgb(4, 107, 202)}
 	padding-bottom: 5px;
 	color: #ddd;
 	border-bottom: 1px solid #ddd;
+	margin:0px;
+}
+.headermenu ul li {
+	padding: 0 0 0px 0;
+	margin:0px;
 }
 .signup {
 margin: 0;
@@ -177,7 +187,14 @@ text-align: center;
 	height: auto !important;
 	margin-bottom:15px;
 }
-
+.sidebarimg {
+	width: 220px;
+height: auto;
+position: absolute;
+left: 30px;
+bottom: 50px;
+	
+}
 .postsingle .post-image img {
 	margin-bottom:0px;
 }
@@ -319,9 +336,9 @@ a:hover {color: #333;}
 
 /* Blog links */
 #content .post-content a 
-{color: #333; border-bottom: 1px dotted #333;}
+{color: #333;}
 #content .post-content a:hover 
-{color: #18bceb; border-bottom: 1px dotted #18bceb; }
+{color: #18bceb; }
 
 /* Blog headings & Bold */
 #content  .post-content h2,
@@ -384,7 +401,7 @@ background-color: #232322;z-index: 1000; text-shadow: none;  position:fixed;left
 #content {}
 
 /* Loop */
-#content .post {padding: 20px 0 20px; margin: 0 0 60px 0; border-bottom: 1px solid #DDDDDD;
+#content .post {padding: 20px 0 20px; margin: 0 0 0px 0; border-bottom: 1px solid #DDDDDD;
 box-shadow: none !important; border-top:none !important; }
 #content .post-date {font-size: 10px; line-height: 10px; text-transform: uppercase; margin-bottom: 5px; font-weight: 300; letter-spacing: 0.5px;}
 #content .post-date, #content  .post-date a {}
@@ -432,19 +449,18 @@ box-shadow: none !important; border-top:none !important; }
 }
 .postsingle .post-content p {
 	line-height:1.4em !important;
-	margin-bottom:20px !important;
 	font-size:18px !important;
 	font-weight:300 !important;
 }
 #content  .post-content {font-size: 19px; line-height: 29px;  margin: 0;padding: 0;} 
-#content  .post-content p {font-size: 16px; line-height: 1.4em;  margin: 0; padding: 0;font-family:'open sans', sans-serif;color:#000; font-weight:300;}
+#content  .post-content p {font-size: 16px; line-height: 1.4em;  margin: 15px 0; padding: 0;font-family:'open sans', sans-serif;color:#000; font-weight:300;}
 #content  .post-content span{position: relative;
 bottom: 5px;line-height:1em;color:#949494;font-size: 14px; margin: 0; padding: 0;font-family:'open sans', sans-serif; font-weight:500;}
 #content  .post-content span a {color:#949494;}
 #content  .post-content h2 {font-size: 28px; line-height: 32px;  margin: 60px 0 30px 0; letter-spacing: -1px;}
 #content  .post-content h3 {font-size: 24px; line-height: 28px;  margin: 50px 0 20px 0; letter-spacing: -1px;}
 #content  .post-content h4 {font-size: 20px; line-height: 24px;  margin: 40px 0 10px 0; letter-spacing: -1px;}
-#content  .post-content img {max-width: 580px; height: auto;  padding: 10px;  -moz-box-shadow:  0px 0px 5px 0px #DDD; -webkit-box-shadow:0px 0px 5px 0px #DDD; box-shadow:0px 0px 5px 0px #EEE;}
+#content  .post-content img {max-width: 100%; height: auto;}
 #content  .post-content blockquote {opacity: 0.5}
 #content  .post-content .wp-caption {text-align: center;}
 #content  .post-content p.wp-caption-text {opacity: 0.5; font-size: 16px; line-height: 18px; padding: 5px 0; }
@@ -1079,6 +1095,9 @@ margin-top:0px;
 	.authordescriphelper {
 		width:auto;
 	}
+	.postsingle .wrapper-inner {
+	padding-top:15px !important;	
+	}
 	.avatar {
 		margin-top:0px;
 		border-radius:4px;
@@ -1175,9 +1194,8 @@ background-position: 0px 71%;
 		.postsingle .wrapper-inner {
 	}
 	.postsingle .headermenu {
-		margin-top: -23px;
 		margin-bottom: 23px;
-		margin-left:100px;
+		margin-left:85px;
 	}
 	
 }
@@ -1189,19 +1207,23 @@ background-position: 0px 71%;
 .postsingle .wrapper-inner { 
 	max-width: 770px !important;
 	padding: 0px !important;
-	padding-top:50px !important;
+	padding-top:15px !important;
 	margin: auto;}
 	
-	
+	.fbcoms {
+		padding:10px;
+	}
 }
 @media (max-width: 770px) {
 	.postsingle .wrapper-inner {
 	max-width: 100% !important;
 	padding: 0px !important;
+	padding-top:15px !important;
+	
+	
 }
 .postsingle .headermenu {
 	margin-left: 84px;
-	margin-top: 37px;
 }
 .chimpform {
 	display:none;
@@ -1218,9 +1240,7 @@ left: 0 !important;
 margin: 0px !important;
 max-width:100%;
 }	
-.postsingle .post {
-	padding-top:0px !important;
-}
+
 .postsingle .post-title {
 	padding-left: 10px !important;
 	padding-right: 10px !important;
@@ -1242,6 +1262,10 @@ max-width:100%;
 	.inner-leftthing {
 	padding: 175px 0 85px 5px;
 	}
+	
+	.sidebarimg {
+		display:none !important;
+	}
 
 	
 }
@@ -1249,6 +1273,10 @@ max-width:100%;
 .littlelogo {
 		position:absolute;
 	
+	}
+	a.indexbutton1, a.indexbutton2 {
+		font-size:10px !important;
+	padding:12px 10px !important;	
 	}
 .zocial, a.zocial {
 	font: 10px/1 "Lucida Grande", Tahoma, sans-serif !important;
@@ -1261,7 +1289,7 @@ margin: 19px 0px 0px !important;
 font-size: 2em; }
 
 .postindex .wrapper-inner {
-	padding:85px 0px;
+	padding:30px 0px;
 }
 #content .post-title h2 {
 margin-bottom: 5px;
@@ -1281,23 +1309,37 @@ margin-left: 10px;
 	font-size:12px	;
 }	
 .inner-leftthing {
-padding: 175px 0 85px 5px;
+padding: 150px 0 25px 5px;
 }
-a.indexbutton2 {
-	margin-left: 5px;
+.leftthing {
+height: 284px;
 }
-	
+a.indexbutton2, a.indexbutton1 {
+	margin-left: 5px !important;
+}
+.inner-leftthing h1 {
+font-size: 28px;
+margin-left: 5px;
+}
+.inner-leftthing h2 {
+font-size: 15px;
+margin-left: 5px;
+margin-top: 7px;
+margin-bottom: 5px;
+}
 }
 @media (max-width: 430px) {
-	a.indexbutton2 {
-	margin-left: 20px;
-	}
-	.inner-leftthing h1 {
-	font-size: 35px;
-	}
-	.inner-leftthing h2 {
-		font-size:18px;
-	}	
 	
+	.fixedlogo { width:35px; }
+	.headermenu ul li { font-size:10px !important; }
+	.postsingle .wrapper-inner {padding-top:0px !important; }
+	.postsingle .headermenu {
+	margin-left: 58px;
+	}
+	.littlelogo {
+	margin: 10px;}
+	#content .post {
+	padding: 21px 0 20px; }
+	.headermenu ul { padding-top:1px !important };
 }
 

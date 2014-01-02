@@ -35,11 +35,22 @@
 	 				 wp_nav_menu( $defaults );
 
 	 				 ?> 
-   				   <div class="post-image">
-				       <?php  global $custom_select_mb;
-				         		 $techniquemeta = $custom_select_mb->the_meta(); 
-								 if($techniquemeta['type'] == 'Post') {
-					the_post_thumbnail('full');  }
+					 <div class="post-image" style="text-align:center">
+					 <span class="pibfi_pinterest" style="width: 100% !important;">
+					     <?php
+						 
+						 global $custom_select_mb;
+						 				         		 $techniquemeta = $custom_select_mb->the_meta(); 
+						 								 if($techniquemeta['type'] == 'Post') {
+						 					the_post_thumbnail('full', array('class' => 'pinthis')); 
+					         $pinterestimage = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+					     ?>
+					   <span class="pinstabtns">  <span class="xc_pin" onclick="pin_this(event, 'http://pinterest.com/pin/create/button/?url=<? the_permalink(); ?>&media=<?php echo $pinterestimage[0]; ?>&description=<?php the_title();?>')">
+					     </span></span>
+					 </span></div>
+					 
+   				<?php }
+					
 					else{
 					
 						echo do_shortcode( '[youtube id="'.$techniquemeta['youtube'].'"]' );
@@ -75,7 +86,7 @@
 				  	<div class="socialleftthingbtns">
 				   <a href="https://twitter.com/FilmBundle" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @FilmBundle</a>
 				  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-				  	<div class="fb-like" data-href="http://facebook.com/filmbundle" data-width="100" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+				  	<div class="fb-like" data-href="http://facebook.com/filmbundle" data-width="77" data-layout="button_count" data-show-faces="false" data-send="false"></div>
 	 
 				  </div>
 				  </div>
