@@ -444,6 +444,11 @@ box-shadow: none !important; border-top:none !important; }
 	font-weight: 700;
 	font-family: 'proxima', sans-serif;
 }
+
+.post-title {
+	border-top: 1px solid #ddd;
+	padding-top:25px;
+}
 .fbcoms p {
 	margin-bottom:10px;
 }
