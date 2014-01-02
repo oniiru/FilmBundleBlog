@@ -166,7 +166,7 @@ function clutterless_enqueue_scripts(){
 	wp_enqueue_style('google-webfonts-nc', 'http://fonts.googleapis.com/css?family=News+Cycle:400');
 	wp_enqueue_style('google-webfonts-mw', 'http://fonts.googleapis.com/css?family=Merriweather:700');
 	wp_enqueue_style('google-webfonts-os', 'http://fonts.googleapis.com/css?family=Open+Sans');
-	wp_enqueue_style('google-webfonts-os', 'http://fonts.googleapis.com/css?family=Amatic+SC:700');
+	wp_enqueue_style('google-webfonts-am', 'http://fonts.googleapis.com/css?family=Amatic+SC:700');
 	
 		
 	wp_enqueue_style('fontsalright', $fontscss);
