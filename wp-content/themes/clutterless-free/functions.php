@@ -159,7 +159,8 @@ function clutterless_enqueue_scripts(){
 	wp_enqueue_style( 'clutterless', get_stylesheet_uri(), array(), CLUTTERLESS_THEME_VERSION );
 	$fontscss = get_stylesheet_directory_uri() . '/fonts/fonts.css';
 	$zocialcss = get_stylesheet_directory_uri() . '/socialcss/zocial.css';
-	
+	wp_enqueue_style('fontsalright', $fontscss);
+	wp_enqueue_style('zocialalright', $zocialcss);
 	
 
 	// Clutterless Google Fonts
@@ -169,8 +170,7 @@ function clutterless_enqueue_scripts(){
 	wp_enqueue_style('google-webfonts-am', 'http://fonts.googleapis.com/css?family=Amatic+SC:700');
 	
 		
-	wp_enqueue_style('fontsalright', $fontscss);
-	wp_enqueue_style('zocialalright', $zocialcss);
+
 	
 	
 	
