@@ -290,7 +290,7 @@ html {height:100%;}
 body 
 {font-family: 'News Cycle', sans-serif; font-weight: 400; }
 
-#content .post-title h2,
+#content .post-title h2, #content .post-title h1,
 #content .post-content h2,
 #content .post-content h3,
 #content .post-content h4,
@@ -332,7 +332,7 @@ a:hover {color: #333;}
 
 /* Blog titles */
 #content  .post-date, #content  .post-date a {color:  #999;}
-#content .post-title h2 {color: #333;}
+#content .post-title h2, #content .post-title h1 {color: #333;}
 
 /* Blog links */
 #content .post-content a 
@@ -406,7 +406,7 @@ box-shadow: none !important; border-top:none !important; }
 #content .post-date {font-size: 10px; line-height: 10px; text-transform: uppercase; margin-bottom: 5px; font-weight: 300; letter-spacing: 0.5px;}
 #content .post-date, #content  .post-date a {}
 #content .post-title {}
-#content .post-title h2 {margin-bottom:5px;font-family: 'proxima' sans-serif;font-size: 32px; line-height: 1.3em; }
+#content .post-title h2, #content .post-title h1 {margin-bottom:5px;font-family: 'proxima' sans-serif;font-size: 32px; line-height: 1.3em; }
 .postsingle .post-title h2 {
 	font-size:40px !important;
 	border-top:1px solid #ddd;
@@ -1291,7 +1291,7 @@ font-size: 2em; }
 .postindex .wrapper-inner {
 	padding:30px 0px;
 }
-#content .post-title h2 {
+#content .post-title h2, #content .post-title h1 {
 margin-bottom: 5px;
 font-family: 'proxima' sans-serif;
 font-size: 20px;
