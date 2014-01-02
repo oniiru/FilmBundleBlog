@@ -119,7 +119,7 @@ function pibfi_Engine_add_pin( $content, $pinterest_base_url, $post_url, $post_t
 			</span>
 		</span>';
 		$replacementinsta = '
-			<span class="pibfi_pinterest">
+			<span class="pibfi_pinterest" style="margin-bottom:37px !important;">
 			<img%1$ssrc="%2$s.%3$s"%4$s>
 			<span class="pinstabtns">
 			<span class="xc_insta xc_pin"> View on Instagram
