@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="clearthing"></div>
-<img class="homelogo littlelogo" src="<?php echo get_template_directory_uri(); ?>/img/whitehmmm.png">
+<img class="homelogo littlelogo" alt="FilmBundle Logo" src="<?php echo get_template_directory_uri(); ?>/img/whitehmmm.png">
 
 <div class="leftthing">
  <div class="inner-leftthing">

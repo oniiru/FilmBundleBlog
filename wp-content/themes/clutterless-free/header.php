@@ -25,11 +25,7 @@
 	<!-- Pingbacks -->
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	
-<?php wp_head(); ?>
-
-<link href='http://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/socialcss/zocial.css">
-	
+<?php wp_head(); ?>	
 
 <script>
 jQuery(function() {
