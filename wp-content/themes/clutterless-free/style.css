@@ -463,8 +463,8 @@ box-shadow: none !important; border-top:none !important; }
 bottom: 5px;line-height:1em;color:#949494;font-size: 14px; margin: 0; padding: 0;font-family:'open sans', sans-serif; font-weight:500;}
 #content  .post-content span a {color:#949494;}
 #content  .post-content h2 {font-size: 28px; line-height: 32px;  margin: 60px 0 30px 0; letter-spacing: -1px;}
-#content  .post-content h3 {font-size: 24px; line-height: 28px;  margin: 50px 0 20px 0; letter-spacing: -1px;}
-#content  .post-content h4 {font-size: 20px; line-height: 24px;  margin: 40px 0 10px 0; letter-spacing: -1px;}
+#content  .post-content h3 {font-size: 24px; line-height: 28px;  margin: 10px 0 20px 0; letter-spacing: -1px;}
+#content  .post-content h4 {font-size: 20px; line-height: 24px;  margin: 10px 0 10px 0; letter-spacing: -1px;}
 #content  .post-content img {max-width: 100%; height: auto;}
 #content  .post-content blockquote {opacity: 0.5}
 #content  .post-content .wp-caption {text-align: center;}

@@ -96,7 +96,7 @@
 
 	                  <a class="zocial twitter" href="<?php echo $twitter_share; ?>" onclick="return !handleSocialWin('<?php echo $twitter_share; ?>', 'Twitter');" target="_blank">Share on Twitter</a>
                 
-	                  <a class="zocial reddit" href="http://www.reddit.com/submit" onclick="window.location = 'http://www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false"> Submit on Reddit </a>
+	                  <a class="zocial reddit" href="http://www.reddit.com/submit" target="_blank" onclick="window.location = 'http://www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false"> Submit on Reddit </a>
 	              </div>
 		          <div class="fbcoms">
 <?php comments_template(); ?>
