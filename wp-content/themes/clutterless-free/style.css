@@ -446,8 +446,7 @@ box-shadow: none !important; border-top:none !important; }
 }
 
 .post-title {
-	border-top: 1px solid #ddd;
-	padding-top:25px;
+
 }
 .fbcoms p {
 	margin-bottom:10px;
@@ -719,6 +718,8 @@ text-shadow: 1px 1px black;
 	}
 	.social_share {
 		padding: 8px 0 3px 0px;
+		border-bottom:1px solid #ddd;
+		margin-bottom:25px;
 	
 	}
 	.mainsharing {
