@@ -7,6 +7,8 @@
 	<!-- Meta -->
 	<meta charset = "UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<a href="https://plus.google.com/+filmbundle"rel="author"target="_blank">Join me on Google+</a>
+
 	
 	<?php
 	// Add meta tag for Facebook's open graph if we have a featured image
