@@ -7,8 +7,7 @@
 	<!-- Meta -->
 	<meta charset = "UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<a href="https://plus.google.com/111178112830093688762" rel="author" target="_blank">Join me on Google+</a>
-	<a href="https://plus.google.com/+FilmBundle" rel="publisher" target="_blank">Join me on Google+</a>
+	
 
 	
 	<?php
@@ -90,6 +89,10 @@ jQuery(function() {
 	    <div class="socialModalOverlay">
 	        &nbsp;
 	    </div>
+		<div style="postition:absolute;top:-1000px">
+		<a href="https://plus.google.com/111178112830093688762" rel="author" target="_blank">Join me on Google+</a>
+		<a href="https://plus.google.com/+FilmBundle" rel="publisher" target="_blank">Join me on Google+</a>
+	</div>
 	    <div class="socialModalVerticalOffset">
 	        <div class="socialModalBox">
 	        	<div class=" widget_title"><a id="closeModal">X</a></div>
