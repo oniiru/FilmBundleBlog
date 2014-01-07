@@ -336,7 +336,7 @@ a:hover {color: #333;}
 
 /* Blog links */
 #content .post-content a 
-{color: #333;}
+{color: #2AA1C2;}
 #content .post-content a:hover 
 {color: #18bceb; }
 
@@ -452,9 +452,16 @@ box-shadow: none !important; border-top:none !important; }
 	margin-bottom:10px;
 }
 .postsingle .post-content p {
-	line-height:1.4em !important;
+	line-height:1.6em !important;
 	font-size:18px !important;
 	font-weight:300 !important;
+}
+
+.post-content label {
+	display: block;
+	font-size: 14px;
+	position: relative;
+	top: -8px;
 }
 #content  .post-content {font-size: 19px; line-height: 29px;  margin: 0;padding: 0;} 
 #content  .post-content p {font-size: 16px; line-height: 1.4em;  margin: 15px 0; padding: 0;font-family:'open sans', sans-serif;color:#000; font-weight:300;}
